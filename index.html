@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unilunch</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://syafiqirz.github.io/Unilunch/style.css">
     <link
     href="https://fonts.googleapis.com/css2?family=Gabarito&family=Inter&family=Nunito&family=Poppins:wght@300&display=swap"
     rel="stylesheet">
@@ -42,18 +41,196 @@
             });
         });
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inter&family=Nunito&family=Poppins:wght@300&display=swap');
+        
+        /* Universal Styles */
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        .login-btn {
+            background-color: #F9C929; /* Warna latar belakang tombol login */
+            color: #000 !important; /* Warna teks pada tombol login */
+            border: 1px solid #000; /* Garis tepi tombol login */
+            border-radius: 10px; /* Sudut bulatan pada tombol login */
+            padding: 8px 20px; /* Ruang dalam tombol login */
+            margin: 30px;
+        }
+
+        .jumbotron {    
+            background-color: #0B0535;
+            color: white;
+        }
+        .jumbotron-btn {
+            background-color: #F9C929; /* Warna latar belakang tombol login */
+            border: 1px solid #000; /* Garis tepi tombol login */
+            color: black !important;
+            border-radius: 10px; /* Sudut bulatan pada tombol login */
+            padding: 8px 20px; /* Ruang dalam tombol login */
+            margin: 10px;
+        }
+
+        .logo{
+            width: 140px;
+            margin: 0px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #000 !important; /* Menggunakan !important untuk memastikan overriden */
+            margin: 20px;
+        }
+
+        .login-container {
+            padding: 10px; /* Padding untuk kotak tombol login */
+            background-color: #f0f0f0; /* Warna latar belakang kotak */
+            border: 1px solid #000; /* Garis tepi kotak */
+            border-radius: 5px; /* Sudut bulatan pada kotak */
+            margin-left: 10px; /* Jarak antara tombol login dan kotak */
+        }
+
+        .teks {
+            font-weight: bold;
+            color: black;
+            text-align: left;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .warp-location {
+            width: 322px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 3px black solid;
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+
+        .warp-location input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0 15px;
+        }
+
+        #map {
+            width: 17px;
+            height: 22.5px;
+        }
+
+        #search {
+            width: 20px;
+            height: 16px;
+        }
+
+        .card {
+            height: 330px; 
+            width: 230px;
+            overflow: hidden; /* Jika ada konten yang lebih besar dari tinggi yang ditetapkan */
+            border: 2px solid black; /* Garis tepi card */
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .custom-col {
+            width: 100px;
+        }
+
+        .card-faq {
+            height: auto; /* Tinggi card */
+            overflow: hidden; /* Jika ada konten yang lebih besar dari tinggi yang ditetapkan */
+            border: 2px solid black; /* Garis tepi card */
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .slider-button {
+            height: 20px; /* Tinggi tombol geser */
+            line-height: 100px; /* Tinggi teks tombol geser */
+            background-color: white;
+        }
+
+        button p{
+            color: #9f015e;
+        }
+
+        .text-header {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text-body-center {
+            text-align: center;
+        }
+
+        #testimoni img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-body img {
+            max-width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 0px 20px 0px;
+            border-radius: 75px;
+        }
+
+        .unilunch-footer{
+            background-color: #F9C929;
+        }
+
+        .unilunch-footer a {
+            color: #000 !important;
+        }
+
+        .unilunch-footer h4 {
+            font-weight: bold;
+        }
+
+        .unilunch-footer img {
+            margin: 10px;
+        }
+        .unilunch-footer-body {
+            margin: 10px 30px;
+            align-items:first baseline;
+        }   
+
+    </style>
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-white navbar-dark">
-            <img src="logo.jpeg" alt="unilunch logo" class="logo">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-md bg-white">
+            <img src="logo.jpeg" alt="unilunch logo" class="logo">                     
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav mr-auto"> <!-- Menggunakan mr-auto untuk menu di kiri -->
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -68,11 +245,15 @@
                     </li>
                 </ul>
             </div>
+            <!-- Tambahkan div d-flex untuk menyatukan login-btn -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="login-btn" href="#">Login</a>
                 </li>
-            </ul>
+            </ul>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: #F9C929; color: black; border-color: black;">
+                <h1 style="color: black; margin: 0px;">≡</h1>
+            </button> 
         </nav>
     </header>
     
@@ -98,32 +279,36 @@
         <section class="container my-5" id="checkout-international">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="location">
-                        <h2 class="text-center mb-4 teks">Check Out Our Menus!</h1>
-                    </div>
+                    <h2 class="text-center mb-4 teks">Check Out Our Menus!</h2>
                 </div>
                 <div class="col-md-6">
                     <div class="warp-location location">
-                        <img src="maps.jpeg" alt="map" id="map">
-                        <input type="text" placeholder="Check menus in your location">
-                        <img src="search.jpeg" alt="search" id="search">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="maps.jpeg" alt="map" id="map">
+                            <input type="text" placeholder="Check menus in your location">
+                            <img src="search.jpeg" alt="search" id="search">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-header">
-                    <h5 class="text-header"><b>Cita Rasa Khas Nusantara</b></h5>
-                </div>
-            </div>
         </section>
+        
+
+        <div class="row">
+            <div class="col-md-12 text-header">
+                <h5 class="text-header"><b>Cita Rasa Khas Nusantara</b></h5>
+            </div>
+        </div>
 
         <section class="container my-5">
             <div class="container-fluid">
                 <div class="row">
-                    <button id="leftButton1" class="btn btn-transparent"><p class="fas fa-chevron-left"><</p></button>
-                    <div class="col">
+                    <button id="leftButton1" class="btn btn-transparent">
+                        <p class="fas fa-chevron-left"><</p>
+                    </button>
+                    <div class="col custom-col">
                         <div class="row flex-nowrap overflow-hidden" id="menuContainer1">
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="nasi-ayam-geprek.png" class="card-img-top" alt="Nasi Ayam">
                                     <div class="card-body">
@@ -132,7 +317,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="nasi-kuning-nikmat.png" class="card-img-top" alt="Nasi Kuning">
                                     <div class="card-body">
@@ -141,7 +326,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="nasi-cah-kangkung.png" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -150,7 +335,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="ayam-saus-mentega.png" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -159,7 +344,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="ayam-rica-rica.png" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -168,7 +353,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="nasi-uduk-komplit.png" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -177,7 +362,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="nasi-ikan-goreng.png" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -188,7 +373,9 @@
                             </div>
                         </div>
                     </div>
-                    <button id="rightButton1" class="btn btn-transparent"><p class="fas fa-chevron-right">></p></button>
+                    <button id="rightButton1" class="btn btn-transparent">
+                        <p class="fas fa-chevron-right">></p>
+                    </button>
                 </div>
             </div>
         </section>
@@ -203,9 +390,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <button id="leftButton2" class="btn btn-transparent"><p class="fas fa-chevron-left"><</p></button>
-                    <div class="col">
+                    <div class="col custom-col">
                         <div class="row flex-nowrap overflow-hidden" id="menuContainer2">
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="chicken-teriyaki.png" class="card-img-top" alt="Nasi Ayam">
                                     <div class="card-body">
@@ -214,7 +401,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="korean-bulgogi.png" class="card-img-top" alt="Nasi Kuning">
                                     <div class="card-body">
@@ -223,7 +410,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="pan-seared-salmon.png" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -232,7 +419,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="mix-sushi.jpeg" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -241,7 +428,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="nasi-kebuli-ayam.jpeg" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -250,7 +437,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col">
                                 <div class="card">
                                     <img src="spaghetti-bolognese.jpeg" class="card-img-top" alt="Nasi Gulai">
                                     <div class="card-body">
@@ -283,7 +470,7 @@
             <div class="container-fluid">
                 <div class="row" id="testimoni">
                     <div class="col-md-4">
-                        <div class="card">
+                        <div>
                             <div class="card-body">
                                 <img src="deryl.png" alt="Testimonials">
                                 <p>"Menu Unilunch variatif banget, harganya juga ramah kantong mahasiswa. Kayaknya mereka bener-bener paham
@@ -293,7 +480,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div>
                             <div class="card-body">
                                 <img src="cathy.jpeg" alt="Testimonials">
                                 <p>"Unilunch, katanya sih, nyelamatin banget pas aku kuliah. Makanannya enak, sehat, dan pengirimannya
@@ -303,7 +490,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div>
                             <div class="card-body">
                                 <img src="syafiq.png" alt="Testimonials">
                                 <p>"Jujurly agak takut bakal bosen sama makanan kampus, tapi Unilunch selalu bawa variasi baru. Setiap hari
@@ -319,24 +506,23 @@
         <section class="container my-5">
             <h2 class="text-center mb-4 text-header">FAQ</h2>
             <div class="accordion" id="faqAccordion">
-                <div class="card">
+                <div class="card-faq">
                     <div class="card-header" id="faq1">
-                        <h5 class="mb-5">
+                        <h5 class="mb-0">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                 Apakah harga di Unilunch bisa menyesuaikan dengan budget kita?
                             </button>
                         </h5>
                     </div>
-
                     <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
                         <div class="card-body">
                             Bisa saja. Jika Anda ingin memesan menu yang harganya relatif murah, Anda bisa memilih menu Nasi Ayam atau Nasi Kuning Nikmat. Jika Anda ingin menikmati makanan yang lebih menawan, Anda bisa memesan menu Nasi Gulai Rendang.
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-faq">
                     <div class="card-header" id="faq2">
-                        <h5 class="mb-5">
+                        <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                 Boleh mengantar pesanan keluarga atau teman ke Unilunch?
                             </button>
@@ -350,6 +536,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
 
     <footer class="container-fluid py-5 unilunch-footer">
@@ -386,8 +573,8 @@
             </div>
             <div class="col-md-4">
                 <!-- Replace these placeholder URLs with your actual download links -->
-                <a href="#" class="mr-3"><img src="apple-store.png" alt="App Store" style="height: 40px;"></a>
-                <a href="#"><img src="google-play-store.png" alt="Google Play" style="height: 40px;"></a>
+                <a href="https://www.apple.com/id/app-store/" class="mr-3"><img src="apple-store.png" alt="App Store" style="height: 40px;"></a>
+                <a href="https://play.google.com"><img src="google-play-store.png" alt="Google Play" style="height: 40px;"></a>
             </div>
     </footer>
 </body>
